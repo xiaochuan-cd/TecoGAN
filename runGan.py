@@ -129,7 +129,7 @@ elif( runcase == 3 ): # Train TecoGAN
         # Download our pre-trained FRVSR model
         print("pre-trained FRVSR model not found, downloading")
         # cmd0 = "wget http://ge.in.tum.de/download/2019-TecoGAN/FRVSR_Ours.zip -O model/ofrvsr.zip;"
-        cmd0 += "unzip model/ofrvsr.zip -d model; rm model/ofrvsr.zip"
+        cmd0 = "unzip model/ofrvsr.zip -d model; rm model/ofrvsr.zip"
         subprocess.call(cmd0, shell=True)
     
     TrainingDataPath = "/mnt/netdisk/video_data/" 
